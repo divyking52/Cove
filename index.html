@@ -1090,6 +1090,14 @@
       padding: clamp(28px, 4vw, 48px) clamp(24px, 4vw, 52px);
       min-width: 0;
     }
+    .voice-body > div:first-child {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
     .voice-quote {
       font-family: var(--font-display);
       font-size: clamp(1.2rem, 2.4vw, 1.65rem);
@@ -1098,15 +1106,19 @@
       line-height: 1.35;
       color: var(--ink);
       max-width: 34ch;
+      margin-inline: auto;
+      text-align: center;
     }
     .voice-meta {
       margin-top: 22px;
       color: var(--ink-mute);
       font-size: .95rem;
+      text-align: center;
     }
     .voice-controls {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 12px;
       margin-top: auto;
     }
